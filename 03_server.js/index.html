@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live server</title>
+</head>
+<body>
+    <h1>This page is served by html through html file</h1>
+    <button id="green">Green</button>
+    <button id="red">Red</button>
+</body>
+<script>
+    // document.querySelector('#red').addEventListener('click',handleclick)
+    document.querySelector('#green').addEventListener('click',handleclick)
+    document.querySelector('#red').addEventListener('click',handleclick)
+    function handleclick(){
+       document.querySelector('body').style.backgroundColor = this.innerText
+    console.log(this.innerText);
+    }
+</script>
+</html>
