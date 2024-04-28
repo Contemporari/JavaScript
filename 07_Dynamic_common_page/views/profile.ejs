@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+</head>
+<body style="background-color: #212121;color: aliceblue;">
+    <%-include('common/header') %>
+    <h1>Welcome to the profile page</h1>
+    <h4>Name is : <%=user.name%></h4>
+    <h4>email is : <%=user.email%></h4>
+    <h4>profile is : <%=user.profile%></h4>
+    <h4> Skills are : </h4>
+    <ul>
+        <%user.skills.forEach((item)=>{%>
+            <li><%= item %></li>
+        <%})%>
+
+    </ul>
+    
+</body>
+</html>
